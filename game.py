@@ -88,11 +88,11 @@ def display_room(room):
 
     Note: <BLANKLINE> here means that doctest should expect a blank line.
     """
-    print()
+    print("")
     print(room["name"].upper())
-    print()
+    print("")
     print(room["description"])
-    print()
+    print("")
    
     # The pass statement does nothing. Replace it with the body of your function.
 
@@ -191,7 +191,7 @@ def menu(exits):
         print_menu(exits)
 
         # Read player's input
-        s = input()
+        s = input("")
         # Normalise the input
 
         # Check if the input makes sense (is valid exit)
@@ -199,7 +199,7 @@ def menu(exits):
         if is_valid_exit(exits, s):
             return s
         else:
-            print("/n"+"you can't go there"+"/n")
+            print("\n"+"you can't go there"+"\n")
 
 
 
